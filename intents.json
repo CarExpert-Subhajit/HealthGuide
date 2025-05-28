@@ -1,0 +1,245 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good day",
+        "What's up?",
+        "How are you?",
+        "Is anyone there?"
+      ],
+      "responses": [
+        "Hey there! 😊 How can I assist you on your fitness journey today?",
+        "Hi! Ask me about workouts, nutrition, or anything fitness-related.",
+        "Hello! I'm here to help you stay healthy and motivated."
+      ]
+    },
+    {
+      "tag": "workout_plan",
+      "patterns": [
+        "I want gym routine",
+        "Suggest a workout plan",
+        "Help me with a gym routine"
+      ],
+      "responses": [
+        "Sure! Are you looking for a home workout, gym routine, or something specific like yoga or strength training?"
+      ],
+      "context_set": "workout"
+    },
+    {
+      "tag": "gym_workout",
+      "patterns": [
+        "gym routine",
+        "I want a gym workout",
+        "Tell me about gym exercises"
+      ],
+      "responses": [
+        "Let's design a gym workout for you! Are you looking to focus on strength, endurance, or weight loss?"
+      ],
+      "context_filter": "workout"
+    }
+  ,
+  {
+    "tag": "exercise_form",
+    "patterns": [
+      "How do I do a proper push-up?",
+      "What is the correct form for burpees?",
+      "Can you explain how to do crunches?",
+      "How do I perform side bends?",
+      "What is the proper way to do a farmer's walk?",
+      "Can you guide me on squats?",
+      "How do I perform leg raises?",
+      "What is the correct form for pull-ups?",
+      "How do I do sit-ups properly?",
+      "Can you explain arm circles?",
+      "What is the proper way to do a bicep curl?",
+      "How should I do an overhead press?",
+      "Can you explain the correct plank position?",
+      "How do I perform lunges properly?",
+      "What is the form for jump squats?",
+      "How should I do skipping properly?",
+      "Can you guide me on tricep dips?",
+      "How do I do bicycle crunches?",
+      "What is the correct way to do jumping jacks?",
+      "What is the proper running form?"
+    ],
+    "responses": [
+      "For push-ups, keep your hands shoulder-width apart, lower your body until your chest is close to the ground, and push back up while keeping your core tight.",
+      "A burpee involves standing, dropping into a squat, kicking your feet back into a push-up position, returning to squat, and jumping up explosively. Want a step-by-step video?",
+      "For crunches, lie on your back with your knees bent, lift your shoulders off the ground using your abs, and lower back down slowly.",
+      "Side bends are done by standing straight, bending sideways at your waist, and keeping your upper body aligned. Do not lean forward or backward.",
+      "The farmer's walk requires you to hold heavy weights in each hand, walk with your back straight, and engage your core.",
+      "For squats, keep your feet shoulder-width apart, back straight, and knees tracking over toes. Want a video tutorial link?",
+      "Leg raises involve lying on your back and lifting your legs until they form a 90-degree angle with your body, keeping your lower back flat on the ground.",
+      "Pull-ups require a strong grip on the bar, pulling your chest towards the bar, and lowering yourself slowly.",
+      "Sit-ups involve lying on your back with knees bent, placing your hands behind your head or across your chest, and lifting your upper body towards your knees.",
+      "For arm circles, extend your arms to the sides and rotate them in small circles, gradually increasing the size of the circles.",
+      "A bicep curl involves holding a dumbbell, keeping your elbows close to your torso, and lifting the weight towards your shoulders.",
+      "The overhead press requires holding weights at shoulder level, pressing them upwards until your arms are fully extended, and lowering back down slowly.",
+      "For a plank, keep your body in a straight line from head to heels, support yourself on your elbows or hands, and engage your core.",
+      "For lunges, take a step forward, lower your body until your knees form 90-degree angles, and push back up to standing.",
+      "Jump squats combine a squat with an explosive jump, landing softly back into the squat position.",
+      "For skipping, use a rope, jump on the balls of your feet, and maintain a consistent rhythm while swinging the rope.",
+      "Tricep dips are done by lowering and raising your body using your arms on a stable surface, keeping your back close to the surface.",
+      "Bicycle crunches involve lying on your back, alternating elbow-to-knee touches while keeping your core engaged.",
+      "Jumping jacks involve jumping while spreading your legs and arms outward, then returning to the starting position.",
+      "For running, maintain an upright posture, keep your strides short, land softly on the balls of your feet, and swing your arms naturally."
+    ]
+  },
+  {
+    "tag": "weekly_routine",
+    "patterns": [
+      "Can you give me a weekly workout routine?",
+      "I need a workout schedule for the week",
+      "Help me plan a weekly fitness routine",
+      "What should I do each day for a week?",
+      "Suggest a weekly workout plan",
+      "Can you create a weekly routine for me?"
+    ],
+    "responses": [
+      "Sure! Here's a general weekly workout plan:\n- Monday: Cardio (running, cycling, or skipping)\n- Tuesday: Strength training (upper body)\n- Wednesday: Yoga or active recovery\n- Thursday: Strength training (lower body)\n- Friday: HIIT or functional training\n- Saturday: Full-body workout\n- Sunday: Rest or light stretching. \nWould you like me to adjust this for your fitness level or goals?",
+      "Here’s a sample weekly plan:\n- Monday: Full-body strength\n- Tuesday: Cardio or endurance training\n- Wednesday: Core and flexibility exercises\n- Thursday: Strength training (upper body focus)\n- Friday: HIIT or speed training\n- Saturday: Fun activity (sports, dance, etc.)\n- Sunday: Rest or active recovery. \nDo you prefer gym or home workouts?",
+      "Here’s a suggested plan for the week:\n- Monday: Push day (chest, shoulders, triceps)\n- Tuesday: Cardio (cycling or running)\n- Wednesday: Pull day (back, biceps, rear delts)\n- Thursday: Active recovery (yoga or walking)\n- Friday: Leg day (squats, lunges, etc.)\n- Saturday: Core and flexibility training\n- Sunday: Rest day. \nWould you like to focus on strength, cardio, or flexibility?"
+    ]
+  },
+  {
+    "tag": "weekly_routine_personalized",
+    "patterns": [
+      "Adjust the routine for weight loss",
+      "Can you make it for muscle building?",
+      "I prefer gym workouts",
+      "I only have dumbbells at home",
+      "I am a beginner, help me with a weekly plan",
+      "I am intermediate, customize the schedule for me",
+      "I am advanced, give me a challenging routine"
+    ],
+    "responses": [
+      "For weight loss, I recommend:\n- Monday: HIIT cardio\n- Tuesday: Strength training (upper body)\n- Wednesday: Active recovery (walking or yoga)\n- Thursday: Lower body workout\n- Friday: HIIT or functional training\n- Saturday: Full-body workout\n- Sunday: Rest or light activity. Would you like me to include meal suggestions?",
+      "For muscle building:\n- Monday: Push day (chest, shoulders, triceps)\n- Tuesday: Pull day (back, biceps)\n- Wednesday: Leg day (squats, lunges, deadlifts)\n- Thursday: Rest\n- Friday: Upper body strength\n- Saturday: Core and flexibility exercises\n- Sunday: Rest. Do you prefer higher volume or heavier weights?",
+      "For a home-based routine with dumbbells:\n- Monday: Full-body dumbbell workout\n- Tuesday: Cardio (skipping, running, or cycling)\n- Wednesday: Core and stretching\n- Thursday: Dumbbell strength training (upper body focus)\n- Friday: HIIT (using body weight or light weights)\n- Saturday: Lower body strength (lunges, squats)\n- Sunday: Rest or yoga. Need exercise specifics?"
+    ]
+  },
+  {
+    "tag": "weekly_routine_followup",
+    "patterns": [
+      "Can you add rest days?",
+      "Include yoga in the schedule",
+      "Focus more on cardio",
+      "I want balanced training",
+      "How about flexibility exercises?",
+      "Add sports activities"
+    ],
+    "responses": [
+      "Here’s an updated plan with more cardio:\n- Monday: Cardio (running or cycling)\n- Tuesday: Strength training\n- Wednesday: Cardio again (HIIT or endurance)\n- Thursday: Yoga or flexibility training\n- Friday: Strength training (full body)\n- Saturday: Sports activity or fun workout\n- Sunday: Rest. Would you like me to provide workout durations?",
+      "If you’d like more focus on flexibility, let’s do this:\n- Monday: Yoga or pilates\n- Tuesday: Cardio\n- Wednesday: Strength training (upper body)\n- Thursday: Stretching or flexibility exercises\n- Friday: Strength training (lower body)\n- Saturday: Active sports or light workout\n- Sunday: Rest. How does that sound?"
+    ]
+  },
+  
+    {
+      "tag": "motivation",
+      "patterns": [
+        "How can I stay motivated?",
+        "Give me motivation tips",
+        "I need help with motivation",
+        "Motivation advice"
+      ],
+      "responses": [
+        "Remember why you started! Break your goals into smaller milestones and celebrate progress. Would you like a motivational quote?",
+        "Tracking your progress can be motivating. Want tips on how to log your workouts?"
+      ]
+    },
+    {
+      "tag": "mental_health",
+      "patterns": [
+        "Can exercise improve mental health?",
+        "What are mental health benefits of fitness?",
+        "Help me understand the link between fitness and mental health",
+        "I feel stressed, can exercise help?"
+      ],
+      "responses": [
+        "Yes! Exercise releases endorphins, improves mood, and reduces stress. Activities like yoga and running are great for mental health. Want a mindfulness tip?",
+        "Regular fitness routines improve sleep and energy levels. Would you like to try a guided meditation?"
+      ]
+    },
+    {
+      "tag": "sleep_and_recovery",
+      "patterns": [
+        "How much sleep do I need?",
+        "Is sleep important for recovery?",
+        "Tell me about sleep and fitness recovery"
+      ],
+      "responses": [
+        "Sleep is critical for muscle repair and overall health. Aim for 7-9 hours a night. Need tips for better sleep?",
+        "Recovery includes proper sleep, hydration, and stretching. Would you like a guide on optimizing recovery?"
+      ]
+    },
+    {
+      "tag": "fitness_goals",
+      "patterns": [
+        "How do I set fitness goals?",
+        "Can you help me set a goal?",
+        "What are realistic fitness goals?",
+        "I want to lose weight, where do I start?"
+      ],
+      "responses": [
+        "Start with SMART goals: Specific, Measurable, Achievable, Relevant, Time-bound. For example, aim to lose 1kg in 2 weeks through diet and exercise. Need help planning?",
+        "Setting a goal depends on your current fitness level and preferences. Let’s create one step-by-step!"
+      ]
+    },
+    {
+      "tag": "time_efficient_workouts",
+      "patterns": [
+        "I don't have much time to work out",
+        "Can you suggest quick workouts?",
+        "What are short workouts for busy people?",
+        "I need a 10-minute workout"
+      ],
+      "responses": [
+        "Try a 10-minute HIIT session! For example: 30 seconds of jumping jacks, squats, and push-ups with 10-second rests. Want the full guide?",
+        "Short workouts can be effective! Would you like a plan for strength or cardio?"
+      ]
+    },
+    {
+      "tag": "fitness_special_needs",
+      "patterns": [
+        "Can you suggest prenatal exercises?",
+        "What are good exercises for seniors?",
+        "Is there a workout for back pain?",
+        "I have knee pain, what should I do?"
+      ],
+      "responses": [
+        "For prenatal fitness, gentle yoga and walking are great. Always consult your doctor first! Want tailored tips?",
+        "For seniors, focus on low-impact exercises like swimming or resistance band training. Would you like a detailed plan?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Talk to you later",
+        "I'm done"
+      ],
+      "responses": [
+        "See you later! Keep up the great work with your fitness goals! 😊",
+        "Goodbye! Come back anytime for more tips and guidance."
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Do you know any jokes?",
+        "Make me laugh!"
+      ],
+      "responses": [
+        "Why did the treadmill bring a date to the gym? It wanted to go the extra mile!",
+        "What’s a fitness coach’s favorite game? Follow the leaderboards!"
+      ]
+    }
+  ]
+}

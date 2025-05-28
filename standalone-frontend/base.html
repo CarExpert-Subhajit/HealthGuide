@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Linking the external stylesheet -->
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <!-- Meta information for character encoding -->
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+
+<body>
+    <!-- Main container for the chatbot -->
+    <div class="container">
+        <!-- Chatbox structure -->
+        <div class="chatbox">
+
+            <!-- Chatbox support window -->
+            <div class="chatbox__support">
+
+                <!-- Header section of the chatbox -->
+                <div class="chatbox__header">
+                    <!-- User avatar in the header -->
+                    <div class="chatbox__image--header">
+                        <!-- <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" -->
+                        <img src="./images/unnamed.jpg" alt="Chatbox icon"
+                            alt="Chatbot user icon">
+                        </div>
+                        
+                        <!-- Text content in the header -->
+                        <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Chat support</h4>
+                        <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                    </div>
+                </div>
+
+
+                <!-- Messages section -->
+                <div class="chatbox__messages">
+                    <!-- Placeholder for chat messages -->
+                    <div></div>
+                </div>
+
+                <!-- Footer section with input and send button -->
+                <div class="chatbox__footer">
+                    <!-- Input field for the user to type messages -->
+                    <input type="text" placeholder="Write a message...">
+                    <!-- Send button -->
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+
+            <!-- Minimized chatbox button -->
+            <!-- <div class="chatbox__button">
+                <button>
+                    <img src="./images/chatbox-icon.svg" alt="Chatbox icon" />
+                </button>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Linking the external JavaScript file -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

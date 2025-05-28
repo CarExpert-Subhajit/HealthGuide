@@ -1,0 +1,9 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-685-595
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:52:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:52:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:52:58] "[36mGET /static/images/chatbox-icon.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:52:58] "[36mGET /static/app.js HTTP/1.1[0m" 304 -
+INFO:root:User: Hi
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:53:02] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'd:\\chatbot-deployment-main\\chat.py', reloading
